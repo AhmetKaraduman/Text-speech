@@ -34,6 +34,6 @@ readBtn.addEventListener("click", () => {
 
 function sayIt(text) {
 	let utterance = new SpeechSynthesisUtterance(text);
-	utterance.lang = allLang.selectedOptions[0].getAttribute("data-lang");
+	utterance.lang = "tr-TR";
 	speechSynthesis.speak(utterance);
 }
